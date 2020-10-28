@@ -1,5 +1,4 @@
 import XCTest
-import IconboxPicker
 
 class Tests: XCTestCase {
     

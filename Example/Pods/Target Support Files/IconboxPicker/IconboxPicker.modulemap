@@ -1,0 +1,6 @@
+framework module IconboxPicker {
+  umbrella header "IconboxPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

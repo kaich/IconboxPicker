@@ -1,0 +1,16 @@
+PODS:
+  - IconboxPicker (0.1.0)
+
+DEPENDENCIES:
+  - IconboxPicker (from `../`)
+
+EXTERNAL SOURCES:
+  IconboxPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IconboxPicker: d796ed73d579f1a681112669e7cb7d4eb6d5468d
+
+PODFILE CHECKSUM: 411a639c9ad5cc46e0b3e19453007b12e179ab65
+
+COCOAPODS: 1.9.3

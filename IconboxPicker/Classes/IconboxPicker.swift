@@ -1,0 +1,90 @@
+//
+//  IconBoxPicker.swift
+//  DemoIcons
+//
+//  Created by mk on 2020/10/28.
+//
+
+import UIKit
+
+public typealias IconBoxCompleteHandler = ((UIImage) -> ())
+
+enum IconboxAction: String {
+    case iconPicker = "iconPicker"
+    
+    static let all: [IconboxAction] = [.iconPicker]
+}
+
+public class IconboxPicker {
+    public static let shared = IconboxPicker()
+    fileprivate var id2handlers: [String : IconBoxCompleteHandler] = [:]
+    
+    public func pick(keyword: String, scheme: String, complete: @escaping IconBoxCompleteHandler) {
+        do {
+            if let name = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String, let identifier = Bundle.main.infoDictionary![kCFBundleIdentifierKey as String] as? String {
+                let uuid = UUID().uuidString
+                let dic = [
+                    "name": name,
+                    "id": identifier,
+                    "keyword": keyword,
+                    "scheme": scheme,
+                    "uuid": uuid
+                ]
+                let data = try JSONSerialization.data(withJSONObject: dic, options: .fragmentsAllowed)
+                let str = data.base64EncodedString()
+                if let url = URL(string: "iconbox://\(IconboxAction.iconPicker.rawValue)?params=\(str)") {
+                    UIApplication.shared.open(url, options: [:]) { (isOK) in
+                        if isOK {
+                            self.id2handlers[uuid] = complete
+                        }
+                    }
+                }
+            }
+        } catch {
+            debugPrint(error)
+        }
+    }
+    
+    public func hanlder(url: URL) {
+        if let host = url.host {
+            if let action = IconboxAction(rawValue: host) {
+                switch action {
+                case .iconPicker:
+                    if let str = url.queryValue(for: "data") {
+                        if let data = Data(base64Encoded: str) {
+                            if let dic = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
+                                if let uuid = dic["uuid"] as? String, let iconStr = dic["icon"] as? String {
+                                    if let iconData = Data(base64Encoded: iconStr) {
+                                        if let actionHandler = self.id2handlers[uuid], let icon = UIImage(data: iconData) {
+                                            actionHandler(icon)
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    public func canHandle(url: URL) -> Bool {
+        if let host = url.host {
+            if IconboxAction(rawValue: host) != nil {
+                return true
+            }
+        }
+        return false
+    }
+
+}
+
+fileprivate extension URL {
+    func queryValue(for key: String) -> String? {
+        return URLComponents(string: absoluteString)?
+            .queryItems?
+            .first(where: { $0.name == key })?
+            .value
+    }
+    
+}
