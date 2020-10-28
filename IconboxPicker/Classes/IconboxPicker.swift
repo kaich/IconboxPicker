@@ -19,6 +19,11 @@ public class IconboxPicker {
     public static let shared = IconboxPicker()
     fileprivate var id2handlers: [String : IconBoxCompleteHandler] = [:]
     
+    /// 选择图片
+    /// - Parameters:
+    ///   - keyword: 关键字
+    ///   - scheme: 本App的URL Scheme
+    ///   - complete: 完成回调
     public func pick(keyword: String, scheme: String, complete: @escaping IconBoxCompleteHandler) {
         do {
             if let name = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String, let identifier = Bundle.main.infoDictionary![kCFBundleIdentifierKey as String] as? String {
@@ -45,6 +50,8 @@ public class IconboxPicker {
         }
     }
     
+    /// 处理URL Scheme
+    /// - Parameter url: url
     public func hanlder(url: URL) {
         if let host = url.host {
             if let action = IconboxAction(rawValue: host) {
@@ -68,6 +75,9 @@ public class IconboxPicker {
         }
     }
     
+    /// 是否可以打开URL
+    /// - Parameter url: url
+    /// - Returns: true/false
     public func canHandle(url: URL) -> Bool {
         if let host = url.host {
             if IconboxAction(rawValue: host) != nil {
@@ -75,6 +85,12 @@ public class IconboxPicker {
             }
         }
         return false
+    }
+    
+    /// 判断是否安装iconbox
+    /// - Returns: true/false
+    public func checkIconboxInstalled() -> Bool {
+        return UIApplication.shared.canOpenURL(URL(string: "iconbox://")!)
     }
 
 }
