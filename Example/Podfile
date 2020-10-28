@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IconboxPicker_Example' do
+  pod 'IconboxPicker', :path => '../'
+
+  target 'IconboxPicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
