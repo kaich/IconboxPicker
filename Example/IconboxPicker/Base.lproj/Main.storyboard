@@ -19,9 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktR-sA-cDf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktR-sA-cDf">
                                 <rect key="frame" x="143" y="358" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="URL Scheme"/>
                                 <connections>
                                     <action selector="clickScheme:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gCE-Lu-kxP"/>
@@ -34,11 +33,26 @@
                                     <constraint firstAttribute="height" constant="128" id="X3N-Ar-4wb"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="244-dA-UFq">
+                                <rect key="frame" x="143" y="445" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LJy-no-t9s"/>
+                                    <constraint firstAttribute="width" constant="89" id="P7y-mx-F8k"/>
+                                </constraints>
+                                <state key="normal" title="Action"/>
+                                <connections>
+                                    <action selector="clickActivity:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eja-1g-o3d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="244-dA-UFq" firstAttribute="centerX" secondItem="R8i-ag-uN1" secondAttribute="centerX" id="JFC-IU-Af6"/>
                             <constraint firstItem="R8i-ag-uN1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PpJ-ka-Ytm"/>
+                            <constraint firstItem="244-dA-UFq" firstAttribute="top" secondItem="ktR-sA-cDf" secondAttribute="bottom" constant="57" id="cDp-p0-x1W"/>
+                            <constraint firstItem="244-dA-UFq" firstAttribute="leading" secondItem="ktR-sA-cDf" secondAttribute="leading" id="kAg-PN-9uD"/>
                             <constraint firstItem="R8i-ag-uN1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="103" id="tzb-Vg-Eba"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="244-dA-UFq" secondAttribute="bottom" constant="192" id="w62-D5-tj9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -47,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,7 @@
 
 import UIKit
 import IconboxPicker
+import UserNotifications
 
 class ViewController: UIViewController {
     @IBOutlet weak var ivImage: UIImageView!
@@ -23,7 +24,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickScheme(_ sender: Any) {
-        IconboxPicker.shared.pick(keyword: "qq", scheme: "pickerDemo") { (image) in
+        IconboxPicker.shared.pick(keyword: "qq", type: IconboxPickerType.scheme(scheme: "pickerDemo")) { (image) in
+            self.ivImage.image = image
+        }
+    }
+    
+    @IBAction func clickActivity(_ sender: Any) {
+        IconboxPicker.shared.pick(keyword: "qq", type: IconboxPickerType.action(viewController: self)) { (image) in
             self.ivImage.image = image
         }
     }

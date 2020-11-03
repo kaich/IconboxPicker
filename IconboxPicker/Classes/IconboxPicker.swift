@@ -7,7 +7,7 @@
 
 import UIKit
 
-public typealias IconBoxCompleteHandler = ((UIImage) -> ())
+public typealias IconBoxCompleteHandler = ((UIImage?) -> ())
 
 enum IconboxAction: String {
     case iconPicker = "iconPicker"
@@ -15,40 +15,29 @@ enum IconboxAction: String {
     static let all: [IconboxAction] = [.iconPicker]
 }
 
+public enum IconboxPickerType {
+    case scheme(scheme: String)
+    case action(viewController: UIViewController)
+}
+
 public class IconboxPicker {
     public static let shared = IconboxPicker()
     fileprivate var id2handlers: [String : IconBoxCompleteHandler] = [:]
     
-    /// 选择图片
+    /// 选择照片
     /// - Parameters:
     ///   - keyword: 关键字
-    ///   - scheme: 本App的URL Scheme
+    ///   - type: 类型
     ///   - complete: 完成回调
-    public func pick(keyword: String, scheme: String, complete: @escaping IconBoxCompleteHandler) {
-        do {
-            if let name = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String, let identifier = Bundle.main.infoDictionary![kCFBundleIdentifierKey as String] as? String {
-                let uuid = UUID().uuidString
-                let dic = [
-                    "name": name,
-                    "id": identifier,
-                    "keyword": keyword,
-                    "scheme": scheme,
-                    "uuid": uuid
-                ]
-                let data = try JSONSerialization.data(withJSONObject: dic, options: .fragmentsAllowed)
-                let str = data.base64EncodedString()
-                if let url = URL(string: "iconbox://\(IconboxAction.iconPicker.rawValue)?params=\(str)") {
-                    UIApplication.shared.open(url, options: [:]) { (isOK) in
-                        if isOK {
-                            self.id2handlers[uuid] = complete
-                        }
-                    }
-                }
-            }
-        } catch {
-            debugPrint(error)
+    public func pick(keyword: String, type: IconboxPickerType, complete: @escaping IconBoxCompleteHandler) {
+        switch type {
+        case .scheme(let scheme):
+            schemePick(keyword: keyword, scheme: scheme, complete: complete)
+        case .action(let viewController):
+            actionPick(keyword: keyword, in: viewController, complete: complete)
         }
     }
+    
     
     /// 处理URL Scheme
     /// - Parameter url: url
@@ -91,6 +80,74 @@ public class IconboxPicker {
     /// - Returns: true/false
     public func checkIconboxInstalled() -> Bool {
         return UIApplication.shared.canOpenURL(URL(string: "iconbox://")!)
+    }
+    
+    /// 选择图片（Scheme形式）
+    /// - Parameters:
+    ///   - keyword: 关键字
+    ///   - scheme: 本App的URL Scheme
+    ///   - complete: 完成回调
+    fileprivate func schemePick(keyword: String, scheme: String, complete: @escaping IconBoxCompleteHandler) {
+        do {
+            let (uuid, payload) = try createPayload(keyword: keyword, scheme: scheme)
+            if let uuid = uuid, let payload = payload?.base64EncodedString() {
+                if let url = URL(string: "iconbox://\(IconboxAction.iconPicker.rawValue)?params=\(payload)") {
+                    UIApplication.shared.open(url, options: [:]) { (isOK) in
+                        if isOK {
+                            self.id2handlers[uuid] = complete
+                        }
+                    }
+                }
+            }
+        } catch {
+            debugPrint(error)
+        }
+    }
+    
+    /// 选择图片（Action形式)
+    /// - Parameters:
+    ///   - keyword: 关键字
+    ///   - viewController: ViewController
+    ///   - complete: 完成回调
+    fileprivate func actionPick(keyword: String, in viewController: UIViewController, complete: @escaping IconBoxCompleteHandler) {
+        do {
+            let (_, payload) = try createPayload(keyword: keyword)
+            if let payload = payload {
+                let activityVC = UIActivityViewController(activityItems: [payload], applicationActivities: [])
+                activityVC.completionWithItemsHandler = { (type, Bool, items, error) in
+                    if let image = items?.first as? UIImage {
+                        complete(image)
+                    }
+                }
+                viewController.present(activityVC, animated: true, completion: nil)
+            }
+        } catch {
+            debugPrint(error)
+        }
+    }
+    
+    /// 创建消息
+    /// - Parameters:
+    ///   - keyword: 关键字
+    ///   - scheme: scheme
+    /// - Throws: 错误
+    /// - Returns: payload
+    fileprivate func createPayload(keyword: String, scheme: String? = nil) throws -> (String?, Data?) {
+        if let name = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String, let identifier = Bundle.main.infoDictionary![kCFBundleIdentifierKey as String] as? String {
+            let uuid = UUID().uuidString
+            var dic = [
+                "name": name,
+                "id": identifier,
+                "keyword": keyword,
+                "uuid": uuid
+            ]
+            if let scheme = scheme {
+                dic["scheme"] = scheme
+            }
+            let data = try JSONSerialization.data(withJSONObject: dic, options: .fragmentsAllowed)
+            return  (uuid, data)
+        }
+        return (nil, nil)
     }
 
 }
