@@ -115,8 +115,11 @@ public class IconboxPicker {
             if let payload = payload {
                 let activityVC = UIActivityViewController(activityItems: [payload], applicationActivities: [])
                 activityVC.completionWithItemsHandler = { (type, Bool, items, error) in
-                    if let image = items?.first as? UIImage {
-                        complete(image)
+                    if let item = items?.first as? NSExtensionItem {
+                        if let image = item.userInfo?["icon"] as? UIImage {
+                            complete(image)
+                            viewController.dismiss(animated: true, completion: nil)
+                        }
                     }
                 }
                 viewController.present(activityVC, animated: true, completion: nil)
