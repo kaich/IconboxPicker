@@ -113,7 +113,10 @@ public class IconboxPicker {
         do {
             let (_, payload) = try createPayload(keyword: keyword)
             if let payload = payload {
-                let activityVC = UIActivityViewController(activityItems: [payload], applicationActivities: [])
+                let item = NSExtensionItem()
+                let attachment = NSItemProvider(item: payload as NSData, typeIdentifier: "com.kai.app.iconbox")
+                item.attachments = [attachment]
+                let activityVC = UIActivityViewController(activityItems: [item], applicationActivities: [])
                 activityVC.completionWithItemsHandler = { (type, Bool, items, error) in
                     if let item = items?.first as? NSExtensionItem {
                         if let image = item.userInfo?["icon"] as? UIImage {
