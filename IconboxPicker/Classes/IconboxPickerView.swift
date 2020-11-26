@@ -12,7 +12,7 @@ public struct IconboxPickerView: UIViewControllerRepresentable {
     public var keyword: String
     public var complete: ((UIImage?) -> ())
     
-    public func makeUIViewController(context: Self.Context) -> UIActivityViewController {
+    public func makeUIViewController(context: Context) -> UIActivityViewController {
         let viewController = IconboxPicker.shared.createActionPicker(keyword: keyword) { (image) in
             if let image = image {
                 complete(image)
