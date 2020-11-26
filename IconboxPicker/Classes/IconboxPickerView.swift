@@ -12,7 +12,7 @@ public struct IconboxPickerView: UIViewControllerRepresentable {
     public var keyword: String
     public var complete: ((UIImage?) -> ())
     
-    init(keyword: String, complete: @escaping ((UIImage?) -> ())) {
+    public init(keyword: String, complete: @escaping ((UIImage?) -> ())) {
         self.keyword = keyword
         self.complete = complete
     }
