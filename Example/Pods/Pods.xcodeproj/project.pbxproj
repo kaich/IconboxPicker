@@ -8,68 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		16FDB66B958BCCD8F08346B1F5194E67 /* Pods-IconboxPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 670DB5CBEA3B66A289914D256481DAF4 /* Pods-IconboxPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29D540676A983E2A7C25FF3C3EB5987E /* IconboxPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8997A9E47657C0E1971F29C73F26C9B /* IconboxPicker.swift */; };
-		36683952A2D1A8F8D47B0D5BCCA0FA35 /* IconboxPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B349F806E560FB80B77CD7831BAC340 /* IconboxPicker-dummy.m */; };
-		41FF5ADCC85F8FE4DE11D8FB6F940CCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4A9E9E0DA1BE1ABCC246876D43EBDB9A /* IconboxPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88ECCCEBD7B50D02D16E72FC233BC2 /* IconboxPicker.swift */; };
+		596B3A609C309C8A073808A30CF03475 /* IconboxPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69163B1A19896C1A90484E017FC9D57A /* IconboxPicker-dummy.m */; };
 		5ABAD250AD34DF63CA173762E2D02E7F /* Pods-IconboxPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D22BFBE3DC19ED029104DC349B5A3F8 /* Pods-IconboxPicker_Example-dummy.m */; };
+		632EC576123A2701A98A0449667AAAB1 /* IconboxPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9385761992F1BCBB4AA15852FFAF64EC /* IconboxPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		661A01342FE0B5B7735E8E0A26B0B352 /* IconboxPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D4A7B4281D03DD520F45E87868DCC /* IconboxPickerView.swift */; };
 		6DADE7C39382FD1A28CD6ECFAC4E795A /* Pods-IconboxPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0159A0761606B7588B4E38FF840937E7 /* Pods-IconboxPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A13758812E966993F8E0E98FB2BBE36 /* IconboxPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4B43BE4FE919DB55C325D5D92D60F9 /* IconboxPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D1455041D3DF6368D4A03CC4A2B9387 /* Pods-IconboxPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DCD589DE3660DF5F75D908BA85EF7E /* Pods-IconboxPicker_Tests-dummy.m */; };
 		A7E72C3B7A66473F4E011D0E930B977C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C7C70057D19B3902978D6A85D4E1A7A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D904569FD373B8264644257623A719AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		884BE30E709A886C27E4F1EA0A24475C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C03FB01D76368A6E1CB4E1A96F4B2834;
-			remoteInfo = "Pods-IconboxPicker_Example";
-		};
-		897031B7F366D678C68A64462DEEB4BF /* PBXContainerItemProxy */ = {
+		6413748CF80F361A3AEFBBBD95EBCA40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6B46B87A8A0B66184EA1B69CB1C43940;
 			remoteInfo = IconboxPicker;
 		};
+		BBEED8F66F6D3055B10BDBD0C8DEA3F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C03FB01D76368A6E1CB4E1A96F4B2834;
+			remoteInfo = "Pods-IconboxPicker_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0159A0761606B7588B4E38FF840937E7 /* Pods-IconboxPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconboxPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
-		02A369DD5611E8604E650432DD748AC2 /* IconboxPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconboxPicker-prefix.pch"; sourceTree = "<group>"; };
-		195692DD6354A56A96F427D1DB052E60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		1D4A2C40DC81D3308796FB3E63D306B3 /* Pods_IconboxPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconboxPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143AF5C1B51CB5D0B8E90AFDD1EFDD3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		17093EC7C1D344DE9073ABF3AE217E06 /* IconboxPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IconboxPicker.debug.xcconfig; sourceTree = "<group>"; };
+		1D4A2C40DC81D3308796FB3E63D306B3 /* Pods_IconboxPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IconboxPicker_Tests.framework; path = "Pods-IconboxPicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		394DE609790719E971CFDB13CDEADD0A /* Pods-IconboxPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IconboxPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4672126D60B5B96828FDAC1A50B5F0B4 /* IconboxPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IconboxPicker.modulemap; sourceTree = "<group>"; };
+		42757133F745C9C43F3682E3827C3C4A /* IconboxPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IconboxPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4B32B9A1EC16BF6AA99F17DD8C9B90F0 /* Pods-IconboxPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4B349F806E560FB80B77CD7831BAC340 /* IconboxPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IconboxPicker-dummy.m"; sourceTree = "<group>"; };
-		515A4F843F0EAA8F6B9E2FA5C55F76F9 /* Pods_IconboxPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconboxPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		515A4F843F0EAA8F6B9E2FA5C55F76F9 /* Pods_IconboxPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IconboxPicker_Example.framework; path = "Pods-IconboxPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		545FB423339AF977668E2AF75E1EC7AA /* Pods-IconboxPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IconboxPicker_Example.modulemap"; sourceTree = "<group>"; };
+		5950A6C91ADBAA46411758165A948F38 /* IconboxPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IconboxPicker.modulemap; sourceTree = "<group>"; };
 		668F4E94EF39D763A2B1AA19F0B6EDB4 /* Pods-IconboxPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		670DB5CBEA3B66A289914D256481DAF4 /* Pods-IconboxPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconboxPicker_Example-umbrella.h"; sourceTree = "<group>"; };
-		69913F6815402499DB806E463DDD6119 /* IconboxPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = IconboxPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6D75463FA689D3681C0E61BFB8A6801F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7167FC8470455B20CDF1CBCFA7487DCC /* IconboxPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IconboxPicker-Info.plist"; sourceTree = "<group>"; };
+		69163B1A19896C1A90484E017FC9D57A /* IconboxPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IconboxPicker-dummy.m"; sourceTree = "<group>"; };
+		6B4D4A7B4281D03DD520F45E87868DCC /* IconboxPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconboxPickerView.swift; path = IconboxPicker/Classes/IconboxPickerView.swift; sourceTree = "<group>"; };
 		746D84AF84A73A76736F3FADE0EF70FE /* Pods-IconboxPicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Tests-Info.plist"; sourceTree = "<group>"; };
 		7F26C3AFB3343162170CCF280CEDD419 /* Pods-IconboxPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8124DF60365083CDCE3A93931AFBEDB2 /* IconboxPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IconboxPicker.release.xcconfig; sourceTree = "<group>"; };
+		81EB6F308789913E0EE949B1A57AD209 /* IconboxPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IconboxPicker.release.xcconfig; sourceTree = "<group>"; };
+		9385761992F1BCBB4AA15852FFAF64EC /* IconboxPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconboxPicker-umbrella.h"; sourceTree = "<group>"; };
 		970239E38EA0CE08CE3ADA075D9C3D4C /* Pods-IconboxPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9D22BFBE3DC19ED029104DC349B5A3F8 /* Pods-IconboxPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IconboxPicker_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B8A0292DF61F54D8A5F616C82E0A55 /* Pods-IconboxPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IconboxPicker_Tests.modulemap"; sourceTree = "<group>"; };
 		B96D444EF625DE3BE0CAED136D8FEE90 /* Pods-IconboxPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IconboxPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BB4B43BE4FE919DB55C325D5D92D60F9 /* IconboxPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconboxPicker-umbrella.h"; sourceTree = "<group>"; };
+		BB88ECCCEBD7B50D02D16E72FC233BC2 /* IconboxPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconboxPicker.swift; path = IconboxPicker/Classes/IconboxPicker.swift; sourceTree = "<group>"; };
+		CA5F66C1E0924944A44A8783F36E953D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CA8825C482F637A207B0CC3F162F0BE3 /* IconboxPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconboxPicker-prefix.pch"; sourceTree = "<group>"; };
 		D2DFEB98BFC42F6F7ACD1A311D594A63 /* Pods-IconboxPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IconboxPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D5DCD589DE3660DF5F75D908BA85EF7E /* Pods-IconboxPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IconboxPicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		DA882B7DCF258C428808CAE2C93BD427 /* Pods-IconboxPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DD4AB053E47AE1AE3699ACFC9585C026 /* Pods-IconboxPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E445A7B35792251AC3D2D349D0AA2DB2 /* IconboxPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IconboxPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8997A9E47657C0E1971F29C73F26C9B /* IconboxPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconboxPicker.swift; path = IconboxPicker/Classes/IconboxPicker.swift; sourceTree = "<group>"; };
+		DE8D1B8D23E46DFC232F397DFF01E84C /* IconboxPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IconboxPicker-Info.plist"; sourceTree = "<group>"; };
+		E445A7B35792251AC3D2D349D0AA2DB2 /* IconboxPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IconboxPicker.framework; path = IconboxPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5D5F6DF314344285329B2476FA176D /* Pods-IconboxPicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Example-Info.plist"; sourceTree = "<group>"; };
-		F98901167774ECA16B551A4636349971 /* IconboxPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IconboxPicker.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +83,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4DDE151D314E790E7EE52DF63FB8A59 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				41FF5ADCC85F8FE4DE11D8FB6F940CCC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AB8A8B17B12D3014E8B8666A91B2F262 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,45 +91,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7C5239FC76CD654ADCF2C8890D7B09B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C70057D19B3902978D6A85D4E1A7A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EBC9D52E7203FBFD5471C7C94F40F89 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4672126D60B5B96828FDAC1A50B5F0B4 /* IconboxPicker.modulemap */,
-				4B349F806E560FB80B77CD7831BAC340 /* IconboxPicker-dummy.m */,
-				7167FC8470455B20CDF1CBCFA7487DCC /* IconboxPicker-Info.plist */,
-				02A369DD5611E8604E650432DD748AC2 /* IconboxPicker-prefix.pch */,
-				BB4B43BE4FE919DB55C325D5D92D60F9 /* IconboxPicker-umbrella.h */,
-				F98901167774ECA16B551A4636349971 /* IconboxPicker.debug.xcconfig */,
-				8124DF60365083CDCE3A93931AFBEDB2 /* IconboxPicker.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/IconboxPicker";
-			sourceTree = "<group>";
-		};
-		1ED9E204D03F180832AF15B48482677C /* IconboxPicker */ = {
-			isa = PBXGroup;
-			children = (
-				E8997A9E47657C0E1971F29C73F26C9B /* IconboxPicker.swift */,
-				30BF8F00D2DFA57A399C7A56FE8176BB /* Pod */,
-				0EBC9D52E7203FBFD5471C7C94F40F89 /* Support Files */,
-			);
-			name = IconboxPicker;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		30BF8F00D2DFA57A399C7A56FE8176BB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				69913F6815402499DB806E463DDD6119 /* IconboxPicker.podspec */,
-				195692DD6354A56A96F427D1DB052E60 /* LICENSE */,
-				6D75463FA689D3681C0E61BFB8A6801F /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		3597682300B544E78E246A0BCBE02602 /* Pods-IconboxPicker_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +116,21 @@
 			);
 			name = "Pods-IconboxPicker_Tests";
 			path = "Target Support Files/Pods-IconboxPicker_Tests";
+			sourceTree = "<group>";
+		};
+		8CA6BB6DC178A11663AB071111A82D4D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5950A6C91ADBAA46411758165A948F38 /* IconboxPicker.modulemap */,
+				69163B1A19896C1A90484E017FC9D57A /* IconboxPicker-dummy.m */,
+				DE8D1B8D23E46DFC232F397DFF01E84C /* IconboxPicker-Info.plist */,
+				CA8825C482F637A207B0CC3F162F0BE3 /* IconboxPicker-prefix.pch */,
+				9385761992F1BCBB4AA15852FFAF64EC /* IconboxPicker-umbrella.h */,
+				17093EC7C1D344DE9073ABF3AE217E06 /* IconboxPicker.debug.xcconfig */,
+				81EB6F308789913E0EE949B1A57AD209 /* IconboxPicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/IconboxPicker";
 			sourceTree = "<group>";
 		};
 		93B8663398E962BA319CD9733407E347 /* Pods-IconboxPicker_Example */ = {
@@ -196,19 +177,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CAA90228AA037E8FFA879114105B843C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1ED9E204D03F180832AF15B48482677C /* IconboxPicker */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CAA90228AA037E8FFA879114105B843C /* Development Pods */,
+				E90D80D253111B11FEB345B12AF9908B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				AA04260B25A3D6FB06D268A76B79CDCE /* Products */,
 				B591F746724B7D4248D80A8A52DD2EFC /* Targets Support Files */,
@@ -223,6 +196,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E495FD3EB3F043E2F0810143F81ACC55 /* IconboxPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BB88ECCCEBD7B50D02D16E72FC233BC2 /* IconboxPicker.swift */,
+				6B4D4A7B4281D03DD520F45E87868DCC /* IconboxPickerView.swift */,
+				FFA268451E1EFD9A9356DF6DB980B184 /* Pod */,
+				8CA6BB6DC178A11663AB071111A82D4D /* Support Files */,
+			);
+			name = IconboxPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E90D80D253111B11FEB345B12AF9908B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E495FD3EB3F043E2F0810143F81ACC55 /* IconboxPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FFA268451E1EFD9A9356DF6DB980B184 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				42757133F745C9C43F3682E3827C3C4A /* IconboxPicker.podspec */,
+				CA5F66C1E0924944A44A8783F36E953D /* LICENSE */,
+				143AF5C1B51CB5D0B8E90AFDD1EFDD3C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -234,11 +237,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		735B393450E8814925383C5426CB3CCE /* Headers */ = {
+		6716B63562FAB400EF490879AF8B4C36 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A13758812E966993F8E0E98FB2BBE36 /* IconboxPicker-umbrella.h in Headers */,
+				632EC576123A2701A98A0449667AAAB1 /* IconboxPicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +258,12 @@
 /* Begin PBXNativeTarget section */
 		6B46B87A8A0B66184EA1B69CB1C43940 /* IconboxPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B3CBED663190859A50AD6519FE86F5C /* Build configuration list for PBXNativeTarget "IconboxPicker" */;
+			buildConfigurationList = 981E6596BEA363551CC2CB43F32A7656 /* Build configuration list for PBXNativeTarget "IconboxPicker" */;
 			buildPhases = (
-				735B393450E8814925383C5426CB3CCE /* Headers */,
-				6CF2CEC862E9192801D9867227E85661 /* Sources */,
-				A4DDE151D314E790E7EE52DF63FB8A59 /* Frameworks */,
-				A45C651D560CCC5E9DB503116FC5568A /* Resources */,
+				6716B63562FAB400EF490879AF8B4C36 /* Headers */,
+				3741F0755283BC538D4D137A1C40268C /* Sources */,
+				B7C5239FC76CD654ADCF2C8890D7B09B /* Frameworks */,
+				E6C3105CF41C5D844374F1290D56A50C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +286,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B7FFE6C817B3BADE97BF43C5B0EE2898 /* PBXTargetDependency */,
+				97BBA5D04C24E58CC423407E8499F99D /* PBXTargetDependency */,
 			);
 			name = "Pods-IconboxPicker_Example";
 			productName = "Pods-IconboxPicker_Example";
@@ -302,7 +305,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BB7C4C63791F042528336BA3CB41773A /* PBXTargetDependency */,
+				9062131C66985905DA16C82701022D40 /* PBXTargetDependency */,
 			);
 			name = "Pods-IconboxPicker_Tests";
 			productName = "Pods-IconboxPicker_Tests";
@@ -346,14 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A45C651D560CCC5E9DB503116FC5568A /* Resources */ = {
+		C8CE123C749D9EB8D21437C86EDD0609 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8CE123C749D9EB8D21437C86EDD0609 /* Resources */ = {
+		E6C3105CF41C5D844374F1290D56A50C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,12 +374,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CF2CEC862E9192801D9867227E85661 /* Sources */ = {
+		3741F0755283BC538D4D137A1C40268C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36683952A2D1A8F8D47B0D5BCCA0FA35 /* IconboxPicker-dummy.m in Sources */,
-				29D540676A983E2A7C25FF3C3EB5987E /* IconboxPicker.swift in Sources */,
+				596B3A609C309C8A073808A30CF03475 /* IconboxPicker-dummy.m in Sources */,
+				4A9E9E0DA1BE1ABCC246876D43EBDB9A /* IconboxPicker.swift in Sources */,
+				661A01342FE0B5B7735E8E0A26B0B352 /* IconboxPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,17 +395,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B7FFE6C817B3BADE97BF43C5B0EE2898 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IconboxPicker;
-			target = 6B46B87A8A0B66184EA1B69CB1C43940 /* IconboxPicker */;
-			targetProxy = 897031B7F366D678C68A64462DEEB4BF /* PBXContainerItemProxy */;
-		};
-		BB7C4C63791F042528336BA3CB41773A /* PBXTargetDependency */ = {
+		9062131C66985905DA16C82701022D40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-IconboxPicker_Example";
 			target = C03FB01D76368A6E1CB4E1A96F4B2834 /* Pods-IconboxPicker_Example */;
-			targetProxy = 884BE30E709A886C27E4F1EA0A24475C /* PBXContainerItemProxy */;
+			targetProxy = BBEED8F66F6D3055B10BDBD0C8DEA3F1 /* PBXContainerItemProxy */;
+		};
+		97BBA5D04C24E58CC423407E8499F99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IconboxPicker;
+			target = 6B46B87A8A0B66184EA1B69CB1C43940 /* IconboxPicker */;
+			targetProxy = 6413748CF80F361A3AEFBBBD95EBCA40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,9 +508,41 @@
 			};
 			name = Debug;
 		};
-		4755AB7414D11A1E8EEBCC51907FFF4D /* Release */ = {
+		6F1AE66ABF4F8A42FEA7E5E2DDB47B02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8124DF60365083CDCE3A93931AFBEDB2 /* IconboxPicker.release.xcconfig */;
+			baseConfigurationReference = 17093EC7C1D344DE9073ABF3AE217E06 /* IconboxPicker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IconboxPicker/IconboxPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IconboxPicker/IconboxPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IconboxPicker/IconboxPicker.modulemap";
+				PRODUCT_MODULE_NAME = IconboxPicker;
+				PRODUCT_NAME = IconboxPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1C2C82583EE2C34BEC900E3ECFBD88A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81EB6F308789913E0EE949B1A57AD209 /* IconboxPicker.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -536,38 +572,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		71EEDC67CCE54FDB46AF8CBF6AC06D49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F98901167774ECA16B551A4636349971 /* IconboxPicker.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IconboxPicker/IconboxPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IconboxPicker/IconboxPicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IconboxPicker/IconboxPicker.modulemap";
-				PRODUCT_MODULE_NAME = IconboxPicker;
-				PRODUCT_NAME = IconboxPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -622,7 +626,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -744,11 +749,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B3CBED663190859A50AD6519FE86F5C /* Build configuration list for PBXNativeTarget "IconboxPicker" */ = {
+		981E6596BEA363551CC2CB43F32A7656 /* Build configuration list for PBXNativeTarget "IconboxPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71EEDC67CCE54FDB46AF8CBF6AC06D49 /* Debug */,
-				4755AB7414D11A1E8EEBCC51907FFF4D /* Release */,
+				6F1AE66ABF4F8A42FEA7E5E2DDB47B02 /* Debug */,
+				A1C2C82583EE2C34BEC900E3ECFBD88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

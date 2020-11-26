@@ -110,6 +110,21 @@ public class IconboxPicker {
     ///   - viewController: ViewController
     ///   - complete: 完成回调
     fileprivate func actionPick(keyword: String, in viewController: UIViewController, complete: @escaping IconBoxCompleteHandler) {
+        let activityVC = createActionPicker(keyword: keyword) { (image) in
+            viewController.dismiss(animated: true, completion: nil)
+        }
+        if let activityVC = activityVC {
+            viewController.present(activityVC, animated: true, completion: nil)
+        }
+        
+    }
+    
+    /// 创建选择器
+    /// - Parameters:
+    ///   - keyword: 关键字
+    ///   - complete: 完成回调
+    /// - Returns: ViewController
+    func createActionPicker(keyword: String, complete: @escaping IconBoxCompleteHandler) -> UIActivityViewController? {
         do {
             let (_, payload) = try createPayload(keyword: keyword)
             if let payload = payload {
@@ -121,15 +136,15 @@ public class IconboxPicker {
                     if let item = items?.first as? NSExtensionItem {
                         if let image = item.userInfo?["icon"] as? UIImage {
                             complete(image)
-                            viewController.dismiss(animated: true, completion: nil)
                         }
                     }
                 }
-                viewController.present(activityVC, animated: true, completion: nil)
+                return activityVC
             }
         } catch {
             debugPrint(error)
         }
+        return nil
     }
     
     /// 创建消息
