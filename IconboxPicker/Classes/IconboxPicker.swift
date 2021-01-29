@@ -109,12 +109,13 @@ public class IconboxPicker {
     ///   - keyword: 关键字
     ///   - viewController: ViewController
     ///   - complete: 完成回调
-    fileprivate func actionPick(keyword: String, in viewController: UIViewController, complete: @escaping IconBoxCompleteHandler) {
+    fileprivate func actionPick(keyword: String, in viewController: UIViewController? = nil, complete: @escaping IconBoxCompleteHandler) {
+        let containerVC = viewController ?? UIApplication.shared.rootViewController
         let activityVC = createActionPicker(keyword: keyword) { (image) in
-            viewController.dismiss(animated: true, completion: nil)
+            containerVC?.dismiss(animated: true, completion: nil)
         }
         if let activityVC = activityVC {
-            viewController.present(activityVC, animated: true, completion: nil)
+            containerVC?.present(activityVC, animated: true, completion: nil)
         }
         
     }
@@ -181,4 +182,25 @@ fileprivate extension URL {
             .value
     }
     
+}
+
+
+extension UIApplication {
+    var currentKeyWindow: UIWindow? {
+        if #available(iOS 13.0, *) {
+            return UIApplication.shared.connectedScenes
+                .filter { $0.activationState == .foregroundActive }
+                .map { $0 as? UIWindowScene }
+                .compactMap { $0 }
+                .first?.windows
+                .filter { $0.isKeyWindow }
+                .first
+        } else {
+            return UIApplication.shared.windows.first
+        }
+    }
+    
+    var rootViewController: UIViewController? {
+        currentKeyWindow?.rootViewController
+    }
 }

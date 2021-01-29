@@ -12,7 +12,6 @@
 		596B3A609C309C8A073808A30CF03475 /* IconboxPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69163B1A19896C1A90484E017FC9D57A /* IconboxPicker-dummy.m */; };
 		5ABAD250AD34DF63CA173762E2D02E7F /* Pods-IconboxPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D22BFBE3DC19ED029104DC349B5A3F8 /* Pods-IconboxPicker_Example-dummy.m */; };
 		632EC576123A2701A98A0449667AAAB1 /* IconboxPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9385761992F1BCBB4AA15852FFAF64EC /* IconboxPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		661A01342FE0B5B7735E8E0A26B0B352 /* IconboxPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D4A7B4281D03DD520F45E87868DCC /* IconboxPickerView.swift */; };
 		6DADE7C39382FD1A28CD6ECFAC4E795A /* Pods-IconboxPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0159A0761606B7588B4E38FF840937E7 /* Pods-IconboxPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D1455041D3DF6368D4A03CC4A2B9387 /* Pods-IconboxPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DCD589DE3660DF5F75D908BA85EF7E /* Pods-IconboxPicker_Tests-dummy.m */; };
 		A7E72C3B7A66473F4E011D0E930B977C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -39,38 +38,37 @@
 
 /* Begin PBXFileReference section */
 		0159A0761606B7588B4E38FF840937E7 /* Pods-IconboxPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconboxPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
-		143AF5C1B51CB5D0B8E90AFDD1EFDD3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		143AF5C1B51CB5D0B8E90AFDD1EFDD3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		17093EC7C1D344DE9073ABF3AE217E06 /* IconboxPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IconboxPicker.debug.xcconfig; sourceTree = "<group>"; };
-		1D4A2C40DC81D3308796FB3E63D306B3 /* Pods_IconboxPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IconboxPicker_Tests.framework; path = "Pods-IconboxPicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4A2C40DC81D3308796FB3E63D306B3 /* Pods_IconboxPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconboxPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		394DE609790719E971CFDB13CDEADD0A /* Pods-IconboxPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IconboxPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		42757133F745C9C43F3682E3827C3C4A /* IconboxPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IconboxPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		42757133F745C9C43F3682E3827C3C4A /* IconboxPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = IconboxPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4B32B9A1EC16BF6AA99F17DD8C9B90F0 /* Pods-IconboxPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		515A4F843F0EAA8F6B9E2FA5C55F76F9 /* Pods_IconboxPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IconboxPicker_Example.framework; path = "Pods-IconboxPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		515A4F843F0EAA8F6B9E2FA5C55F76F9 /* Pods_IconboxPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconboxPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		545FB423339AF977668E2AF75E1EC7AA /* Pods-IconboxPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IconboxPicker_Example.modulemap"; sourceTree = "<group>"; };
 		5950A6C91ADBAA46411758165A948F38 /* IconboxPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IconboxPicker.modulemap; sourceTree = "<group>"; };
 		668F4E94EF39D763A2B1AA19F0B6EDB4 /* Pods-IconboxPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		670DB5CBEA3B66A289914D256481DAF4 /* Pods-IconboxPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconboxPicker_Example-umbrella.h"; sourceTree = "<group>"; };
 		69163B1A19896C1A90484E017FC9D57A /* IconboxPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IconboxPicker-dummy.m"; sourceTree = "<group>"; };
-		6B4D4A7B4281D03DD520F45E87868DCC /* IconboxPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconboxPickerView.swift; path = IconboxPicker/Classes/IconboxPickerView.swift; sourceTree = "<group>"; };
 		746D84AF84A73A76736F3FADE0EF70FE /* Pods-IconboxPicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Tests-Info.plist"; sourceTree = "<group>"; };
 		7F26C3AFB3343162170CCF280CEDD419 /* Pods-IconboxPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		81EB6F308789913E0EE949B1A57AD209 /* IconboxPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IconboxPicker.release.xcconfig; sourceTree = "<group>"; };
 		9385761992F1BCBB4AA15852FFAF64EC /* IconboxPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconboxPicker-umbrella.h"; sourceTree = "<group>"; };
 		970239E38EA0CE08CE3ADA075D9C3D4C /* Pods-IconboxPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconboxPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9D22BFBE3DC19ED029104DC349B5A3F8 /* Pods-IconboxPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IconboxPicker_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B8A0292DF61F54D8A5F616C82E0A55 /* Pods-IconboxPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IconboxPicker_Tests.modulemap"; sourceTree = "<group>"; };
 		B96D444EF625DE3BE0CAED136D8FEE90 /* Pods-IconboxPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IconboxPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BB88ECCCEBD7B50D02D16E72FC233BC2 /* IconboxPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconboxPicker.swift; path = IconboxPicker/Classes/IconboxPicker.swift; sourceTree = "<group>"; };
-		CA5F66C1E0924944A44A8783F36E953D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CA5F66C1E0924944A44A8783F36E953D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CA8825C482F637A207B0CC3F162F0BE3 /* IconboxPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconboxPicker-prefix.pch"; sourceTree = "<group>"; };
 		D2DFEB98BFC42F6F7ACD1A311D594A63 /* Pods-IconboxPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IconboxPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D5DCD589DE3660DF5F75D908BA85EF7E /* Pods-IconboxPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IconboxPicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		DA882B7DCF258C428808CAE2C93BD427 /* Pods-IconboxPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DD4AB053E47AE1AE3699ACFC9585C026 /* Pods-IconboxPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		DE8D1B8D23E46DFC232F397DFF01E84C /* IconboxPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IconboxPicker-Info.plist"; sourceTree = "<group>"; };
-		E445A7B35792251AC3D2D349D0AA2DB2 /* IconboxPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IconboxPicker.framework; path = IconboxPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E445A7B35792251AC3D2D349D0AA2DB2 /* IconboxPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IconboxPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5D5F6DF314344285329B2476FA176D /* Pods-IconboxPicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconboxPicker_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				BB88ECCCEBD7B50D02D16E72FC233BC2 /* IconboxPicker.swift */,
-				6B4D4A7B4281D03DD520F45E87868DCC /* IconboxPickerView.swift */,
 				FFA268451E1EFD9A9356DF6DB980B184 /* Pod */,
 				8CA6BB6DC178A11663AB071111A82D4D /* Support Files */,
 			);
@@ -380,7 +377,6 @@
 			files = (
 				596B3A609C309C8A073808A30CF03475 /* IconboxPicker-dummy.m in Sources */,
 				4A9E9E0DA1BE1ABCC246876D43EBDB9A /* IconboxPicker.swift in Sources */,
-				661A01342FE0B5B7735E8E0A26B0B352 /* IconboxPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,8 +622,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
