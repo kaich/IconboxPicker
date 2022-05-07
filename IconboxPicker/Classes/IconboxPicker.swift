@@ -155,7 +155,7 @@ public class IconboxPicker {
     /// - Throws: 错误
     /// - Returns: payload
     fileprivate func createPayload(keyword: String, scheme: String? = nil) throws -> (String?, Data?) {
-        if let name = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String, let identifier = Bundle.main.infoDictionary![kCFBundleIdentifierKey as String] as? String {
+        if let name = Bundle.main.infoDictionary!["CFBundleDisplayName"] as? String, let identifier = Bundle.main.infoDictionary![kCFBundleIdentifierKey as String] as? String {
             let uuid = UUID().uuidString
             var dic = [
                 "name": name,
